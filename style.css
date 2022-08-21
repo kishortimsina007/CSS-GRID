@@ -1,3 +1,53 @@
-h1{
-    Color:red;
+main {
+    display: grid;
+    gap:10px;
+    grid-template-areas: 
+    "Header"
+    "Box1"
+    "Box2"
+     "Box3"
+    "Main Sidebar"
+    "footer";
+    grid-template-columns: 200px;
+    grid-template-rows: 100px 150px 200px 500px;
+ }
+ h1,h2 {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+ }
+
+ header{
+    background-color: red;
+    grid-area: header;
+ }
+
+ .Box1 {
+    background-color: green;
+    grid-area: Box1;
+ }
+
+ .Box2 {
+    background-color: blue;
+    grid-area: Box2;
+ }
+
+ .Box3 {
+    background-color: purple;
+    grid-area: Box3;
 }
+
+.Main {
+    background-color: yellow;
+    grid-area: Main;
+}
+
+.Sidebar {
+    background-color: darkslategrey;
+    grid-area: Sidebar;
+}
+
+footer {
+    background-color: lightseagreen;
+    grid-area: footer;
+}
+ 
